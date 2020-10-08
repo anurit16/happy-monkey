@@ -87,7 +87,11 @@ background(180);
    }
   //creating the gameState:end
       else if (gameState === END) {
-          text("Game Over",300,100);
+          
+        stroke("black");
+        textSize(30);
+        fill("red");
+        text("Game Over",210,150);
         
         ground.velocityX = 0;
          foodGroup.setVelocityXEach(0);
